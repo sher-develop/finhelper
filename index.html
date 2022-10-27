@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Helper | Помощник в Вашем бизнесе</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="position-relative">
+    <aside class="position-fixed finance-block">
+        <nav class="navbar navbar-expand-lg">
+            <div class="collapse navbar-collapse fin-block-btn" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-pills flex-column bg-fin shadow-sm p-3 mb-5 bg-body rounded rounded-3"
+                    id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <li class="nav-item">
+                        <button
+                            class="nav-link fin-link active d-inline-flex rounded  p-2 my-2 w-100 align-items-center"
+                            id="v-pills-express-tab" data-bs-toggle="pill" data-bs-target="#v-pills-express"
+                            type="button" role="tab" aria-controls="v-pills-express" aria-selected="true">Экспресс
+                            анализ</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link d-inline-flex rounded fin-link p-2 my-2 w-100 align-items-center"
+                            id="v-pills-in-depth-tab" data-bs-toggle="pill" data-bs-target="#v-pills-in-depth"
+                            type="button" role="tab" aria-controls="v-pills-in-depth" aria-selected="true">Операционный
+                            рычаг</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link d-inline-flex rounded fin-link p-2 my-2 w-100 align-items-center"
+                            id="v-pills-profitability-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profitability"
+                            type="button" role="tab" aria-controls="v-pills-profitability" aria-selected="true">Бизнес
+                            риски</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link d-inline-flex rounded fin-link p-2 my-2 w-100 align-items-center"
+                            id="v-pills-price-def-tab" data-bs-toggle="pill" data-bs-target="#v-pills-price-def"
+                            type="button" role="tab" aria-controls="v-pills-price-def" aria-selected="true">Определение
+                            базовой цены</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link d-inline-flex rounded fin-link p-2 my-2 w-100 align-items-center"
+                            id="v-pills-operationManagement-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-operationManagement" type="button" role="tab"
+                            aria-controls="v-pills-operationManagement" aria-selected="true">Оперативный
+                            менеджмент</button>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link p-2 fin-link" href="#" id="v-pills-manual-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-manual" type="button" role="tab" aria-controls="v-pills-manual"
+                            aria-selected="false">Справка по теме</a>
+                    </li>
+                    <ul class="nav col-md-6 mt-2 justify-content-start list-unstyled flex-nowrap icons-show-nav">
+                        <li class="ms-2"><a class="footer-text-icon-nav" href="mailto:sher.jumayev@yandex.com"><i class="bi bi-envelope-fill"></i></a></li>
+                        <li class="ms-3"><a class="footer-text-icon-nav" href="mailto:sjumayev.dev@gmail.com"><i class="bi bi-google"></i></a></li>
+                        <li class="ms-3"><a class="footer-text-icon-nav" href="https://github.com/sher-develop"><i class="bi bi-github"></i></a></li>
+                        <li class="ms-3"><a class="footer-text-icon-nav" href="https://www.linkedin.com/in/sherzod-jumayev-b97807102"><i class="bi bi-linkedin"></i></a></li>
+                        <li class="ms-3"><a class="footer-text-icon-nav" href="https://vk.com/sherdeveloper"><img src="./assets/img/logo_vk_28.svg" alt=""></a></li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+    
+    <main class="finance-main">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between px-2 pt-4">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-text" href="index.html">
+                    <img src="./assets/img/logo.svg"> 
+                    <small>Финансовый<br>помощник</small>
+                </a>
+                <ul class="nav col-md-6 justify-content-end list-unstyled flex-nowrap icons-show">
+                    <li class="ms-0"><a class="footer-text-icon" href="mailto:sher.jumayev@yandex.com"><i class="bi bi-envelope-fill"></i></a></li>
+                    <li class="ms-3"><a class="footer-text-icon" href="mailto:sjumayev.dev@gmail.com"><i class="bi bi-google"></i></a></li>
+                    <li class="ms-3"><a class="footer-text-icon" href="https://github.com/sher-develop"><i class="bi bi-github"></i></a></li>
+                    <li class="ms-3"><a class="footer-text-icon" href="https://www.linkedin.com/in/sherzod-jumayev-b97807102"><i class="bi bi-linkedin"></i></a></li>
+                    <li class="ms-3"><a class="footer-text-icon" href="https://vk.com/sherdeveloper"><img src="./assets/img/logo_vk_28.svg" alt=""></a></li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <section class="mt-3">
+            <div class="tab-content" id="v-pills-tabContent">
+                <!-- Экспресс анализ -->
+                <div class="tab-pane m-3 fade show active" id="v-pills-express" role="tabpanel"
+                    aria-labelledby="v-pills-express-tab">
+                    <div class="row mx-1">
+                        <!-- Коэффициенты рентабельности -->
+                        <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3">
+                            <a class="btn btn-primary btn-primary-about d-flex justify-content-between align-items-center"
+                                data-bs-toggle="collapse" href="#profitExample" role="button" aria-expanded="false"
+                                aria-controls="profitExample">
+                                <h6 class="pt-2 fw-bold title-color title-uppercase pe-2">Коэффициенты рентабельности
+                                </h6>
+                                <i class="bi bi-info-square-fill bi-size"></i>
+                            </a>
+                            <div class="collapse" id="profitExample">
+                                <div class="card card-body my-3">
+                                    <p class="lh-sm fs-6"><strong class="fw-bolder">Эти коэффициенты</strong>
+                                        показывают, насколько прибыльна деятельность компании. Эти коэффициенты
+                                        рассчитываются как отношение
+                                        полученной прибыли к объему реализованной продукции. Наиболее часто используются
+                                        коэффициенты
+                                        представленные ниже.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-container profitability-slider mt-3">
+                                <!-- Additional required wrapper -->
+                                <div class="btn-sliders d-flex justify-content-end">
+                                    <div class="profitability-button-prev mx-1 mb-2 fs-3"><i
+                                            class="bi bi-arrow-left-circle-fill"></i>
+                                    </div>
+                                    <div class="profitability-button-next mx-1 mb-2 fs-3"><i
+                                            class="bi bi-arrow-right-circle-fill"></i>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Рентабельность
+                                                        всех активов
+                                                    </h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#ralla"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="ralla" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            показывает
+                                                            сколько
+                                                            денежных
+                                                            единиц
+                                                            потребовалось фирме для получения одной денежной единицы
+                                                            прибыли,
+                                                            независимо
+                                                            от
+                                                            источника привлечения этих средств</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#rallaModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Рентабельность
+                                                        реализованной продукции
+                                                    </h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#rrp"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="rrp" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            показывает
+                                                            сколько
+                                                            денежных
+                                                            единиц
+                                                            чистой
+                                                            прибыли принесла каждая денежная единица реализованной
+                                                            продукции</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#rrpModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Рентабельность
+                                                        собственного капитала
+                                                    </h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#rsk"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="rsk" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            показывает
+                                                            эффективность
+                                                            использования
+                                                            капитала, инвестированного собственниками, и сравнить этот
+                                                            показатель с
+                                                            возможным получением дохода от вложения этих средств в
+                                                            ценные бумаги</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#rskModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Коэффициенты рентабельности -->
+                        <!-- Коэффициент ликвидности -->
+                        <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3">
+                            <a class="btn btn-primary btn-primary-about d-flex justify-content-between align-items-center"
+                                data-bs-toggle="collapse" href="#liquidityExample" role="button" aria-expanded="false"
+                                aria-controls="liquidityExample">
+                                <h6 class="pt-2 fw-bold title-color title-uppercase pe-2">Коэффициенты ликвидности</h6>
+                                <i class="bi bi-info-square-fill bi-size"></i>
+                            </a>
+                            <div class="collapse" id="liquidityExample">
+                                <div class="card card-body my-3">
+                                    <p class="lh-sm fs-6"><strong class="fw-bolder">Эти
+                                            коэффициенты</strong>
+                                        позволяют определять способность предприятия оплатить свои краткосрочные
+                                        обязательства в течении
+                                        отчетного периода.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-container liquidity-slider mt-3">
+                                <!-- Additional required wrapper -->
+                                <div class="btn-sliders d-flex justify-content-end">
+                                    <div class="liquidity-button-prev mx-1 mb-2 fs-3"><i
+                                            class="bi bi-arrow-left-circle-fill"></i></div>
+                                    <div class="liquidity-button-next mx-1 mb-2 fs-3"><i
+                                            class="bi bi-arrow-right-circle-fill"></i></div>
+                                </div>
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Коэффициент общей
+                                                        ликвидности</h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#kol"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="kol" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            показывает достаточно
+                                                            ли у
+                                                            предприятия
+                                                            средств, которые могут быть использованы для погашения его
+                                                            краткосрочных
+                                                            обязательств в течении определенного периода</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#kolModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Коэффициент срочной
+                                                        ликвидности</h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#ksl"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="ksl" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            показывает достаточно
+                                                            ли у
+                                                            предприятия
+                                                            денежных средств для погашения его краткосрочных
+                                                            обязательств в течении
+                                                            определенного периода</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#kslModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Чистый оборотный капитал
+                                                    </h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#chok"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="chok" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Чистый
+                                                            оборотный капитал
+                                                            необходим для
+                                                            поддержания
+                                                            финансовой устойчивости предприятия</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#chokModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Коэффициент ликвидности -->
+                        <!-- Коэффициенты деловой активности -->
+                        <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3">
+                            <a class="btn btn-primary btn-primary-about d-flex justify-content-between align-items-center"
+                                data-bs-toggle="collapse" href="#turnoverExample" role="button" aria-expanded="false"
+                                aria-controls="turnoverExample">
+                                <h6 class="pt-2 fw-bold title-color title-uppercase pe-2">Коэффициенты деловой
+                                    активности
+                                </h6>
+                                <i class="bi bi-info-square-fill bi-size"></i>
+                            </a>
+                            <div class="collapse" id="turnoverExample">
+                                <div class="card card-body my-3">
+                                    <p class="lh-sm fs-6"><strong class="fw-bolder">Показатели
+                                            оборачиваемости</strong> имеют большое значение для оценки финансового
+                                        положения компании,
+                                        поскольку
+                                        скорость оборота средств, т.е. скорость превращения их в денежную форму
+                                        оказывает
+                                        непосредственное
+                                        влияние на платежеспособность компании</p>
+                                </div>
+                            </div>
+                            <div class="swiper-container turnover-slider mt-3">
+                                <!-- Additional required wrapper -->
+                                <div class="btn-sliders d-flex justify-content-end">
+                                    <div class="turnover-button-prev mx-1 mb-2 fs-3"><i
+                                            class="bi bi-arrow-left-circle-fill"></i></div>
+                                    <div class="turnover-button-next mx-1 mb-2 fs-3"><i
+                                            class="bi bi-arrow-right-circle-fill"></i></div>
+                                </div>
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Коэффициент оборачиваемости
+                                                        активов
+                                                    </h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#koa"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="koa" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            характеризует
+                                                            эффективность
+                                                            использования
+                                                            всех
+                                                            имеющихся
+                                                            ресурсов, независимо от источников их привлечения</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#koaModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Коэффициент оборачиваемости
+                                                        дебиторской
+                                                        задолженности</h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#kodz"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="kodz" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            расчитывает сколько
+                                                            раз в среднем
+                                                            дебиторская задолжность превращалась в денежные средства в
+                                                            течении
+                                                            отчетного
+                                                            периода</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#kodzModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Коэффициент оборачиваемости
+                                                        кредиторской
+                                                        задолженности</h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#kokz"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="kokz" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            показывает сколько
+                                                            компании
+                                                            требуется
+                                                            оборотов для оплаты выставленных ей счетов</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#kokzModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Коэффициент оборачиваемости
+                                                        материально-производственных запасов</h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#kompz"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="kompz" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            отражает скорость
+                                                            реализации этих
+                                                            запасов
+                                                        </p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#kompzModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Коэффициенты деловой активности -->
+                        <!-- Коэффициенты структуры капитала -->
+                        <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3">
+                            <a class="btn btn-primary btn-primary-about d-flex justify-content-between align-items-center"
+                                data-bs-toggle="collapse" href="#capitalExample" role="button" aria-expanded="false"
+                                aria-controls="capitalExample">
+                                <h6 class="pt-2 fw-bold title-color title-uppercase pe-2">Коэффициенты структуры
+                                    капитала
+                                </h6>
+                                <i class="bi bi-info-square-fill bi-size"></i>
+                            </a>
+                            <div class="collapse" id="capitalExample">
+                                <div class="card card-body my-3">
+                                    <p class="lh-sm fs-6"><strong class="fw-bolder">Показатели структуры
+                                            капитала</strong> характеризуют степень защищенности интересов кредиторов и
+                                        инвесторов,
+                                        имеющих
+                                        долгосрочные вложения в компанию, отражающие способность предприятия погашать
+                                        долгосрочную
+                                        задолженность
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-container capital-slider mt-3">
+                                <!-- Additional required wrapper -->
+                                <div class="btn-sliders d-flex justify-content-end">
+                                    <div class="capital-button-prev mx-1 mb-2 fs-3"><i
+                                            class="bi bi-arrow-left-circle-fill"></i></div>
+                                    <div class="capital-button-next mx-1 mb-2 fs-3"><i
+                                            class="bi bi-arrow-right-circle-fill"></i></div>
+                                </div>
+                                <div class="swiper-wrapper">
+
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Коэффициент собственности
+                                                    </h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#kso"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="kso" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            характеризует долю
+                                                            собственного
+                                                            капитала
+                                                            в структуре капитала компании, а, следовательно, соотношение
+                                                            интересов
+                                                            собственников предприятия и кредиторов</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#ksoModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Коэффициент финансовой
+                                                        зависимости</h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#kfz"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="kfz" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color">Коэффициент
+                                                            характеризует
+                                                            зависимость
+                                                            компании от
+                                                            внешних займов. Чем он выше, тем больше займов у компании,
+                                                            которая может
+                                                            привести к банкротству предприятия</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#kfzModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="col mb-3">
+                                            <div class="card" style="min-height: 9rem;">
+                                                <div class="card-body">
+                                                    <h6 class="card-title fw-bold pe-2">Коэффициент защищенности
+                                                        кредиторов
+                                                    </h6>
+                                                    <button
+                                                        class="btn-chevron btn collapsed btn-position fs-4 px-1 py-0"
+                                                        data-bs-toggle="collapse" data-bs-target="#kzk"
+                                                        aria-expanded="false" aria-current="true">
+                                                        <i class="bi bi-chevron-bar-expand"></i>
+                                                    </button>
+                                                    <div class="collapse" id="kzk" style="">
+                                                        <p class="card-text pt-3 fs-6 lh-sm title-color"> Коэффициент
+                                                            характеризует степень
+                                                            защищенности кредиторов
+                                                            от
+                                                            невыплаты процентов за предоставленный кредит</p>
+
+                                                        <small><button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#kzkModal"
+                                                                class="btn btn-primary text-white w-100 mt-3">Узнай
+                                                                больше</button></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ./Коэффициенты структуры капитала -->
+                    </div>
+
+                </div>
+                <!-- ./Экспресс анализ -->
+                <!-- Операционный рычаг -->
+                <div class="tab-pane m-3 fade" id="v-pills-in-depth" role="tabpanel"
+                    aria-labelledby="v-pills-in-depth-tab">
+
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3">
+                                <a class="btn btn-primary btn-primary-about d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" href="#operativeExample" role="button"
+                                    aria-expanded="false" aria-controls="operativeExample">
+                                    <h6 class="pt-2 fw-bold title-color title-uppercase me-2">Операционный рычаг</h6>
+                                    <i class="bi bi-info-square-fill bi-size"></i>
+                                </a>
+                                <div class="collapse" id="operativeExample">
+                                    <div class="card card-body my-3">
+                                        <p class="lh-sm fs-6">Под операционным рычагом подразумевают решения важных
+                                            вопросов перед финансистами на всех этапах денежного оборота. Этот
+                                            показатель в экономической литературе обозначается как сумма покрытия,
+                                            которой бы хватило не только на покрытие постоянных расходов, но и на
+                                            формирование прибыли. <strong>Действие операционного рычага проявляется в
+                                                том, что любое изменение выручки от реализации всегда порождает более
+                                                сильное изменение прибыли.</strong></p>
+                                        <h6 class="fw-bold title-color mt-2">ПРИМЕР</h6>
+                                        <p class="lh-sm fs-6">При возможном увеличении выручки от реализации, скажем на
+                                            <strong>1-10%</strong>, прибыль возрастет в зависимости от операционного
+                                            рычага <strong>на порядок в процентном соотнощении</strong>, тоже самое при
+                                            снижении выручки от реализации</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Расчет операционного рычага -->
+                            <div class="row justify-content-between">
+                                <div class="col col-sm-4 d-flex align-items-stretch align-self-stretch">
+                                    <div class="card mb-3 rounded rounded-3 shadow-sm">
+                                        <div class="card-body">
+                                            <h5 class="card-title title-color fw-bold mb-3">Введите данные</h5>
+                                            <form class="row align-items-end" name="operatingLever">
+                                                <div class="mb-3 col col-sm-12 col-sm-6 input-group-sm">
+                                                    <label for="salesProceeds"
+                                                        class="form-label lh-sm fw-light fs-6"><small>Выручка
+                                                            от
+                                                            реализации</small></label>
+                                                    <input type="text" class="form-control calc" id="salesProceeds"
+                                                        name="salesProceeds" aria-describedby="salesProceeds" required>
+                                                </div>
+                                                <div class="mb-3 col col-sm-12 col-sm-6 input-group-sm">
+                                                    <label for="salesProceeds"
+                                                        class="form-label lh-sm fw-light fs-6"><small>Суммарные
+                                                            переменные
+                                                            затраты</small></label>
+                                                    <input type="text" class="form-control calc" id="variableCosts"
+                                                        name="variableCosts" aria-describedby="variableCosts" required>
+                                                </div>
+                                                <div class="mb-3 col col-sm-12 col-sm-6 input-group-sm">
+                                                    <label for="salesProceeds"
+                                                        class="form-label lh-sm fw-light fs-6"><small>Суммарные
+                                                            постоянные
+                                                            затраты</small></label>
+                                                    <input type="text" class="form-control calc" id="fixedCosts"
+                                                        name="fixedCosts" aria-describedby="fixedCosts" required>
+
+                                                </div>
+                                                <div class="mb-3 col col-sm-12 col-sm-6 input-group-sm">
+                                                    <label for="salesProceeds"
+                                                        class="form-label lh-sm fw-light fs-6"><small>Изменение процента
+                                                            выручки</small></label>
+                                                    <input type="text" class="form-control" id="changePercent"
+                                                        name="changePercent" aria-describedby="changePercent" required>
+                                                </div>
+                                                <div class="mb-3 col-sm-12 justify-content-end text-end">
+                                                    <button type="submit"
+                                                        class="w-auto btn btn-primary">Вычислить</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-8 col-12 d-flex align-items-stretch align-self-stretch">
+                                    <div class="card mb-3 rounded rounded-3 shadow-sm flex-fill">
+                                        <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Результат</h4>
+                                        <div class="card-body">
+                                            <h6 class="card-title fs-5">Сила операционного рычага</h6>
+                                            <div class="row align-items-center justify-content-between my-2">
+                                                <span class="col col-sm-8 fs-6">Выручка от реализации:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold"
+                                                    id="cvpSalesProceeds">0</span>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between my-2">
+                                                <span class="col col-sm-8 fs-6">Суммарные переменные затраты:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold"
+                                                    id="cvpVariableCosts">0</span>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between my-2 pb-4">
+                                                <span class="col col-sm-8 fs-6">Суммарные постоянные затраты:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold"
+                                                    id="cvpFixedCosts">0</span>
+                                            </div>
+                                            <hr>
+                                            <div class="row align-items-center justify-content-between my-2">
+                                                <span class="col col-sm-8 fs-6">При увеличении выручки на: </span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold result-text"
+                                                    id="cvpChangePercent">0%</span>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between my-2">
+                                                <span class="col col-sm-8 fs-6">Ваша прибыли будет увеличина на: </span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold result-text"
+                                                    id="cvpResult">0%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./Расчет операционного рычага -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3">
+                                <a class="btn btn-primary btn-primary-about d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" href="#unitCostExample" role="button"
+                                    aria-expanded="false" aria-controls="operativeExample">
+                                    <h6 class="pt-2 fw-bold title-color title-uppercase me-2">Себестоимость единицы
+                                        продукции
+                                    </h6>
+                                    <i class="bi bi-info-square-fill bi-size"></i>
+                                </a>
+                                <div class="collapse" id="unitCostExample">
+                                    <div class="card card-body my-3">
+                                        <p class="lh-sm fs-6">Анализируя данные по издержкам производства, можно
+                                            столкнуться с проблемой их дифференциации, здесь можно определить ставки
+                                            переменных издержек на единицу продукции, а также ставки постоянных издержек
+                                            на единицу продукции и их динамическое изменение. На нашем сайте вы можете
+                                            узнать совокупность данных по дифференциации издержек <strong>методом
+                                                максимальной и минимальной точки.</strong></p>
+                                        <div class="alert alert-warning d-flex align-items-center fs-6 lh-sm"
+                                            role="alert">
+                                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                                                <symbol id="exclamation-triangle-fill" fill="currentColor"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                                                </symbol>
+                                            </svg>
+
+                                            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img"
+                                                aria-label="Warning:">
+                                                <use xlink:href="#exclamation-triangle-fill" /></svg>
+                                            <div>
+                                                <small>В связи с тем, что здесь используется метод максимальной и
+                                                    минимальной
+                                                    точки, погрешность при расчете может составить 7-12%
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Расчет себестоимости продукции -->
+                            <div class="row justify-content-between">
+                                <div class="col col-sm-6 d-flex align-items-stretch align-self-stretch">
+                                    <div class="d-flex justify-content-between align-items-center flex-column">
+                                        <div class="card mb-3 rounded rounded-3 shadow-sm">
+                                            <div class="card-body">
+                                                <h5 class="card-title title-color fw-bold mb-3">Введите данные</h5>
+                                                <form class="row align-items-end" name="unitCosts">
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="salesProceeds"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Максимальный<br>объем
+                                                                производства</small></label>
+                                                        <input type="text" class="form-control calc" id="maxProduct"
+                                                            name="maxProduct" aria-describedby="maxProduct" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="salesProceeds"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Минимальный<br>объем
+                                                                производства</small></label>
+                                                        <input type="text" class="form-control calc" id="minProduct"
+                                                            name="minProduct" aria-describedby="minProduct" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="salesProceeds"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Максимальные<br>расходы</small></label>
+                                                        <input type="text" class="form-control calc" id="maxCosts"
+                                                            name="maxCosts" aria-describedby="maxCosts" required>
+
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="salesProceeds"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Минимальные<br>расходы</small></label>
+                                                        <input type="text" class="form-control" id="minCosts"
+                                                            name="minCosts" aria-describedby="minCosts" required>
+                                                    </div>
+                                                    <div class="mb-3 col-sm-12 justify-content-end text-end">
+                                                        <button type="submit"
+                                                            class="w-auto btn btn-primary">Вычислить</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 w-100 rounded rounded-3 shadow-sm flex-fill">
+                                            <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Себестоимость
+                                                единицы продукции</h4>
+                                            <div class="card-body">
+                                                <div
+                                                    class="row align-items-center justify-content-between my-1 py-2 border-bottom">
+                                                    <span class="col col-sm-8 fs-6">Средние переменные расходы на
+                                                        единицу продукции:</span>
+                                                    <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                        id="resProduct">0<small>у.е./ед.</small></span>
+                                                </div>
+
+                                                <div
+                                                    class="row align-items-center justify-content-between my-1 py-2 border-bottom">
+                                                    <span class="col col-sm-8 fs-6">Общая сумма постоянных
+                                                        издержек:</span>
+                                                    <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                        id="resCost">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-6 col-12 d-flex align-items-stretch align-self-stretch">
+                                    <div class="card mb-3 rounded rounded-3 shadow-sm flex-fill">
+                                        <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Выводы данных</h4>
+                                        <div class="card-body">
+                                            <h6 class="card-title fs-5">Определение себестоимости</h6>
+                                            <div
+                                                class="row align-items-center justify-content-between py-1 pt-2 mt-3 border-bottom">
+                                                <span class="col col-sm-8 fs-6">Максимальный объем производства:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resMaxProduct">0</span>
+                                            </div>
+                                            <div
+                                                class="row align-items-center justify-content-between py-1 pt-2 mt-3 border-bottom">
+                                                <span class="col col-sm-8 fs-6">Минимальный объем производства:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resMinProduct">0</span>
+                                            </div>
+                                            <div
+                                                class="row align-items-center justify-content-between py-1 pt-2 mt-3 border-bottom">
+                                                <span class="col col-sm-8 fs-6">Максимальные расходы:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resMaxCosts">0</span>
+                                            </div>
+                                            <div
+                                                class="row align-items-center justify-content-between py-1 pt-2 mt-3 border-bottom">
+                                                <span class="col col-sm-8 fs-6">Минимальные расходы:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resMinCosts">0</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ./Расчет себестоимости продукции -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.Операционный рычаг -->
+
+                <!-- Предпринимательский риск -->
+                <div class="tab-pane m-3 fade" id="v-pills-profitability" role="tabpanel"
+                    aria-labelledby="v-pills-profitability-tab">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3">
+                                <a class="btn btn-primary btn-primary-about d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" href="#profitabilityExample" role="button"
+                                    aria-expanded="false" aria-controls="operativeExample">
+                                    <h6 class="pt-2 fw-bold title-color title-uppercase">Предпринимательский риск</h6>
+                                    <i class="bi bi-info-square-fill bi-size"></i>
+                                </a>
+                                <div class="collapse" id="profitabilityExample">
+                                    <div class="card card-body my-3">
+                                        <p class="lh-sm fs-6"><strong>Порог рентабельности</strong> – это такая выручка
+                                            от реализации, при которой предприятие уже не имеет убытков, но еще не имеет
+                                            прибылей. Валовая маржа в точности хватает на покрытие постоянных
+                                            затрат, и прибыль равна нулю.</p>
+                                        <p class="lh-sm fs-6"><strong>Порог безубыточности</strong> – это такая выручка
+                                            от реализации, которая покрывает переменные затраты и прямые постоянные
+                                            затраты. Если, несмотря на все старания, не достигается хотя бы нулевые
+                                            значения промежуточной маржи – этот товар надо снимать с производства</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <!-- Расчет предпринимательского риска -->
+                            <div class="row justify-content-between">
+                                <div class="col col-sm-6 d-flex align-items-stretch align-self-stretch">
+                                    <div class="d-flex justify-content-between align-items-center flex-column">
+                                        <div class="card mb-3 rounded rounded-3 shadow-sm">
+                                            <div class="card-body">
+                                                <h5 class="card-title title-color fw-bold mb-3">Введите данные</h5>
+                                                <form class="row align-items-end" name="entrepreneurRisk">
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="entrepreneurPrice"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Цена<br>реализации</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="entrepreneurPrice" name="entrepreneurPrice"
+                                                            aria-describedby="entrepreneurPrice" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="entrepreneurIncome"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Объем<br>реализации
+                                                                за год</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="entrepreneurIncome" name="entrepreneurIncome"
+                                                            aria-describedby="entrepreneurIncome" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="entrepreneurDirectCost"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Переменные<br>расходы
+                                                                на единицу товара</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="entrepreneurCost" name="entrepreneurCost"
+                                                            aria-describedby="entrepreneurCost" required>
+
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="entrepreneurDirectCost"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Прямые
+                                                                постоянные<br>расходы за год</small></label>
+                                                        <input type="text" class="form-control"
+                                                            id="entrepreneurDirectCost" name="entrepreneurDirectCost"
+                                                            aria-describedby="entrepreneurDirectCost" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="entrepreneurIndirectCost"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Косвенные
+                                                                постоянные<br>расходы за год</small></label>
+                                                        <input type="text" class="form-control"
+                                                            id="entrepreneurIndirectCost"
+                                                            name="entrepreneurIndirectCost"
+                                                            aria-describedby="entrepreneurIndirectCost" required>
+                                                    </div>
+                                                    <div class="mb-3 col-sm-12 justify-content-end text-end">
+                                                        <button type="submit"
+                                                            class="w-auto btn btn-primary">Вычислить</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 w-100 rounded rounded-3 shadow-sm flex-fill">
+                                            <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Окупаемость
+                                                продукции</h4>
+                                            <div class="card-body">
+                                                <div
+                                                    class="row align-items-center justify-content-between my-1 py-2 border-bottom">
+                                                    <span class="col col-sm-8 fs-6">Возможное получение прибыли
+                                                        через:</span>
+                                                    <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                        id="resProfitabilityAfter">0</span>
+                                                </div>
+
+                                                <div
+                                                    class="row align-items-center justify-content-between my-1 py-2 border-bottom">
+                                                    <span class="col col-sm-8 fs-6">Возможное покрытие постоянных затрат
+                                                        через:</span>
+                                                    <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                        id="resMakeoutAfter">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-6 col-12 d-flex align-items-stretch align-self-stretch">
+                                    <div class="card mb-3 rounded rounded-3 shadow-sm flex-fill">
+                                        <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Выводы данных</h4>
+                                        <div class="card-body" id="resultEntrepreneur">
+                                            <h6 class="card-title fs-5 fw-bold">Порог рентабельности</h6>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Выручка за год:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resSaleProceeds">0</span>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Валовая маржа:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resGrossMargin">0</span>
+                                            </div>
+                                            <div
+                                                class="row align-items-center justify-content-between py-1 border-bottom">
+                                                <span class="col col-sm-8 fs-6">Коэффициент валовой маржи:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resKoGrossMargin">0</span>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Порог рентабельности в шт.:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resProfitabilityQual">0</span>
+                                            </div>
+                                            <div
+                                                class="row align-items-center justify-content-between py-1 border-bottom">
+                                                <span class="col col-sm-8 fs-6">Порог рентабельности в ден.ед.:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resProfitabilityPrice">0</span>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Порог безубыточности в шт.:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resMakeoutQual">0</span>
+                                            </div>
+                                            <div
+                                                class="row align-items-center justify-content-between py-1 border-bottom">
+                                                <span class="col col-sm-8 fs-6">Порог безубыточности в ден.ед.:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resMakeoutPrice">0</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- ./Расчет предпринимательского риска -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Предпринимательский риск -->
+                <!-- Определение базовой цены -->
+                <div class="tab-pane m-3 fade" id="v-pills-price-def" role="tabpanel"
+                    aria-labelledby="v-pills-price-def-tab">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3">
+                                <a class="btn btn-primary btn-primary-about d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" href="#priceDefExample" role="button"
+                                    aria-expanded="false" aria-controls="priceDefExample">
+                                    <h6 class="pt-2 fw-bold title-color title-uppercase">Определение базовой цены</h6>
+                                    <i class="bi bi-info-square-fill bi-size"></i>
+                                </a>
+                                <div class="collapse" id="priceDefExample">
+                                    <div class="card card-body my-3">
+                                        <p class="lh-sm fs-6">Существуют пять основных методов определения базовой цены,
+                                            которые можно использовать изолированно, либо в различных комбинациях к друг
+                                            другу. Рассмотрение основных методов ценообразования можно считать одним из
+                                            основных средств достижения стратегических маркетинговых целей предприятия
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <!-- Расчет метода полных издержек -->
+                            <div class="row justify-content-between mb-2">
+                                <div class="col col-sm-6 d-flex align-items-stretch align-self-stretch">
+                                    <div class="d-flex justify-content-between align-items-center flex-column">
+                                        <div class="card mb-3 w-100 rounded rounded-3 shadow-sm flex-fill">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold text-uppercase title-color">Метод полных
+                                                    издержек</h5>
+                                                <p class="card-text lh-sm" style="font-size: 14px;">Наиболее
+                                                    распространенный метод.
+                                                    Применяется на предприятиях с четко выраженной товарной
+                                                    дифференциацией, для расчета цен по традиционным товарам. Этот метод
+                                                    наиболее эффективен при расчете цен на товары пониженной
+                                                    конкурентоспособности</p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 rounded rounded-3 shadow-sm">
+                                            <div class="card-body">
+                                                <h5 class="card-title title-color fw-bold mb-3">Введите данные</h5>
+                                                <form class="row align-items-end" name="targetPricing">
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="targetProfitability"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Планируемая<br>себестоимость
+                                                                продукции</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="targetProfitability" name="targetProfitability"
+                                                            aria-describedby="targetProfitability" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="targetProductionPrice"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Планируемая<br>рентабельность
+                                                                в %</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="targetProductionPrice" name="targetProductionPrice"
+                                                            aria-describedby="targetProductionPrice" required>
+                                                    </div>
+                                                    <div class="mb-3 col-sm-12 justify-content-end text-end">
+                                                        <button type="submit"
+                                                            class="w-auto btn btn-primary">Вычислить</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col col-sm-6 col-12 d-flex align-items-stretch align-self-stretch">
+                                    <div class="card mb-3 rounded rounded-3 shadow-sm flex-fill">
+                                        <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Расчет цены изделия
+                                        </h4>
+                                        <div class="card-body" id="targetPricing">
+                                            <h6 class="card-title fs-5 fw-bold">Метод полных издержек</h6>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Планируемая себестоимость единицы
+                                                    продукции:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resTargetProfitability">0</span>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Планируемая рентабельность в %:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resTargetProductionPrice">0</span>
+                                            </div>
+                                            <hr>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Расчетная цена изделия :</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                    id="resTargetPrice">0</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Расчет метода полных издержек -->
+
+                            <!-- Расчет метода маржинальных издержек -->
+                            <div class="row justify-content-between mb-2">
+                                <div class="col col-sm-6 d-flex align-items-stretch align-self-stretch">
+                                    <div class="d-flex justify-content-between align-items-center flex-column">
+                                        <div class="card mb-3 w-100 rounded rounded-3 shadow-sm flex-fill">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold text-uppercase title-color">Метод
+                                                    маржинальных
+                                                    издержек</h5>
+                                                <p class="card-text lh-sm" style="font-size: 14px;">Метод маржинальных
+                                                    издержек представляют собой ситуацию когда к переменным затратам на
+                                                    единицу продукции добавляется сумма (процент), покрывающая затраты и
+                                                    обеспечивающая достаточную норму прибыли. <strong>Метод применим
+                                                        практически для любых предприятий</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 rounded rounded-3 shadow-sm">
+                                            <div class="card-body">
+                                                <h5 class="card-title title-color fw-bold mb-3">Введите данные</h5>
+                                                <form class="row align-items-end" name="marginPricing">
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="marginProductionVolume"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Планируемый<br>объем
+                                                                производства за год</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="marginProductionVolume" name="marginProductionVolume"
+                                                            aria-describedby="marginProductionVolume" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="marginCost"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Планируемые<br>переменные
+                                                                затраты на ед. изделия</small></label>
+                                                        <input type="text" class="form-control calc" id="marginCost"
+                                                            name="marginCost" aria-describedby="marginCost" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="marginDirectCost"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Планируемая<br>сумма
+                                                                постоянных затрат за год</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="marginDirectCost" name="marginDirectCost"
+                                                            aria-describedby="marginDirectCost" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="marginProfit"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Планируемая<br>прибыль
+                                                                за год</small></label>
+                                                        <input type="text" class="form-control calc" id="marginProfit"
+                                                            name="marginProfit" aria-describedby="marginProfit"
+                                                            required>
+                                                    </div>
+                                                    <div class="mb-3 col-sm-12 justify-content-end text-end">
+                                                        <button type="submit"
+                                                            class="w-auto btn btn-primary">Вычислить</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col col-sm-6 col-12 d-flex align-items-stretch align-self-stretch">
+                                    <div class="card mb-3 rounded rounded-3 shadow-sm flex-fill">
+                                        <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Расчет цены изделия
+                                        </h4>
+                                        <div class="card-body" id="marginPricingUnit">
+                                            <h6 class="card-title fs-5 fw-bold">Метод маржинальных<br>издержек</h6>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Желательный результат от реализации
+                                                    после возмещения переменных затрат:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resMarginRealization">0</span>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Желательный результат от реализации
+                                                    после возмещения переменных затрат на единицу изделия:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resMarginRealizationUnit">0</span>
+                                            </div>
+                                            <hr>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Расчетная цена изделия:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                    id="resMarginPrice">0</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Расчет метода маржинальных издержек -->
+                            <!-- Расчет метода рентабельности инвестиций -->
+                            <div class="row justify-content-between mb-2">
+                                <div class="col col-sm-6 d-flex align-items-stretch align-self-stretch">
+                                    <div class="d-flex justify-content-between align-items-center flex-column">
+                                        <div class="card mb-3 w-100 rounded rounded-3 shadow-sm flex-fill">
+                                            <div class="card-body">
+                                                <h5 class="card-title fw-bold text-uppercase title-color">Метод
+                                                    рентабельности инвестиций</h5>
+                                                <p class="card-text lh-sm" style="font-size: 14px;">Метод основан на
+                                                    том, что проект должен обеспечить рентабельность не ниже стоимости
+                                                    заемных средств, к сумме затрат на единицу продукции добавляется
+                                                    сумма процентов за кредит</p>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-3 rounded rounded-3 shadow-sm">
+                                            <div class="card-body">
+                                                <h5 class="card-title title-color fw-bold mb-3">Введите данные</h5>
+                                                <form class="row align-items-end" name="projectProfitPricing">
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="profitProductionVolume"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Прогнозируемый<br>объем
+                                                                производства за год</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="profitProductionVolume" name="profitProductionVolume"
+                                                            aria-describedby="profitProductionVolume" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="profitCost"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Предполагаемые<br>переменные
+                                                                затраты на ед. изделия</small></label>
+                                                        <input type="text" class="form-control calc" id="profitCost"
+                                                            name="profitCost" aria-describedby="profitCost" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="profitDirectCost"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Сумма
+                                                                постоянных затрат</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="profitDirectCost" name="profitDirectCost"
+                                                            aria-describedby="profitDirectCost" required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="profitCredit"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Дополнительное
+                                                                финансирование (кредит)</small></label>
+                                                        <input type="text" class="form-control calc" id="profitCredit"
+                                                            name="profitCredit" aria-describedby="profitCredit"
+                                                            required>
+                                                    </div>
+                                                    <div class="mb-3 col col-sm-6 input-group-sm">
+                                                        <label for="profitCreditValue"
+                                                            class="form-label lh-sm fw-light fs-6"><small>Процентная
+                                                                ставка</small></label>
+                                                        <input type="text" class="form-control calc"
+                                                            id="profitCreditValue" name="profitCreditValue"
+                                                            aria-describedby="profitCreditValue" required>
+                                                    </div>
+                                                    <div class="mb-3 col-sm-12 justify-content-end text-end">
+                                                        <button type="submit"
+                                                            class="w-auto btn btn-primary">Вычислить</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col col-sm-6 col-12 d-flex align-items-stretch align-self-stretch">
+                                    <div class="card mb-3 rounded rounded-3 shadow-sm flex-fill">
+                                        <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Расчет цены изделия
+                                        </h4>
+                                        <div class="card-body" id="projectProfitability">
+                                            <h6 class="card-title fs-5 fw-bold">Метод рентабельности инвестиций</h6>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Суммарные затраты на ед. изделия:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resProfitCost">0</span>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Желаемая прибыль:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                    id="resProfitUnit">0</span>
+                                            </div>
+                                            <hr>
+                                            <div class="row align-items-center justify-content-between py-1">
+                                                <span class="col col-sm-8 fs-6">Расчетная цена изделия:</span>
+                                                <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                    id="resProfitPrice">0</span>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Расчет метода рентабельности инвестиций -->
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Определение базовой цены -->
+                <!-- Оперативный менеджмент -->
+                <div class="tab-pane m-3 fade" id="v-pills-operationManagement" role="tabpanel"
+                    aria-labelledby="v-pills-operationManagement-tab">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3">
+                                <a class="btn btn-primary btn-primary-about d-flex justify-content-between align-items-center"
+                                    data-bs-toggle="collapse" href="#tfpExample" role="button" aria-expanded="false"
+                                    aria-controls="tfpExample">
+                                    <h6 class="pt-2 fw-bold title-color title-uppercase">Оперативный менеджмент</h6>
+                                    <i class="bi bi-info-square-fill bi-size"></i>
+                                </a>
+                                <div class="collapse" id="tfpExample">
+                                    <div class="card card-body my-3">
+                                        <p class="lh-sm fs-6">В зависимости от отрасли и области деятельности
+                                            предприятия, его эксплуатационный цикл может быть более или менее
+                                            длительным. Отсюда вытекают существенные особенности финансового менеджмента
+                                            различных предприятий</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <!-- Расчет текущих финансовых потребностей -->
+                            <div class="row mb-2">
+                                <div class="col col-sm-12">
+                                    <div class="card mb-3 w-100 rounded rounded-3 shadow-sm flex-fill">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold text-uppercase title-color">Текущие финансовые
+                                                потребности</h5>
+                                            <p class="card-text lh-sm" style="font-size: 14px;">представляют собой
+                                                разницу между средствами, закрепленными в запасах сырья, готовой
+                                                продукции, незавершённом производстве, дебиторской задолженности, и
+                                                кредиторской задолженностью</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-12">
+                                    <div class="row">
+                                        <div class="col col-sm-4 d-flex align-items-stretch align-self-stretch">
+                                            <div class="card mb-3 rounded rounded-3 shadow-sm">
+                                                <div class="card-body">
+                                                    <h5 class="card-title title-color fw-bold mb-3">Введите данные</h5>
+                                                    <form class="row align-items-end" name="tfp">
+                                                        <div class="mb-3 col col-sm-12 input-group-sm">
+                                                            <label for="tfpStore"
+                                                                class="form-label lh-sm fw-light fs-6"><small>Запасы:
+                                                                    Код.1210</small></label>
+                                                            <input type="text" class="form-control calc" id="tfpStore"
+                                                                name="tfpStore" aria-describedby="tfpStore" required>
+                                                        </div>
+                                                        <div class="mb-3 col col-sm-12 input-group-sm">
+                                                            <label for="tfpNotesPayable"
+                                                                class="form-label lh-sm fw-light fs-6"><small>Дебиторская
+                                                                    задолженность: Код.1230</small></label>
+                                                            <input type="text" class="form-control calc"
+                                                                id="tfpNotesPayable" name="tfpNotesPayable"
+                                                                aria-describedby="tfpNotesPayable" required>
+                                                        </div>
+                                                        <div class="mb-3 col col-sm-12 input-group-sm">
+                                                            <label for="tfpBillPayable"
+                                                                class="form-label lh-sm fw-light fs-6"><small>Кредиторска
+                                                                    задолженность: Код.1520</small></label>
+                                                            <input type="text" class="form-control calc"
+                                                                id="tfpBillPayable" name="tfpBillPayable"
+                                                                aria-describedby="tfpBillPayable" required>
+                                                        </div>
+
+                                                        <div class="mb-3 col-sm-12 justify-content-end text-end">
+                                                            <button type="submit"
+                                                                class="w-auto btn btn-primary">Вычислить</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-8 d-flex align-items-stretch align-self-stretch">
+                                            <div class="card mb-3 rounded rounded-3 shadow-sm flex-fill">
+                                                <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Текущие
+                                                    финансовые потребности</h4>
+                                                <div class="card-body" id="tfpResult">
+                                                    <div class="row align-items-center justify-content-between py-1">
+                                                        <span class="col col-sm-8 fs-6">Запасы:</span>
+                                                        <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                            id="resTfpStore">0</span>
+                                                    </div>
+                                                    <div class="row align-items-center justify-content-between py-1">
+                                                        <span class="col col-sm-8 fs-6">Дебиторская
+                                                            задолженность:</span>
+                                                        <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                            id="resTfpNotesPayable">0</span>
+                                                    </div>
+                                                    <div class="row align-items-center justify-content-between py-1">
+                                                        <span class="col col-sm-8 fs-6">Кредиторская
+                                                            задолженность:</span>
+                                                        <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                            id="resTfpBillPayable">0</span>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="row align-items-center justify-content-between py-1">
+                                                        <span class="col col-sm-8 fs-6">Расчет ТФП:</span>
+                                                        <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                            id="resTfp">0</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Расчет текущих финансовых потребностей -->
+                            <!-- Расчет собственных оборотных средств -->
+                            <div class="row mb-2">
+                                <div class="col col-sm-12">
+                                    <div class="card mb-3 w-100 rounded rounded-3 shadow-sm flex-fill">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold text-uppercase title-color">Собственные
+                                                оборотные средства</h5>
+                                            <p class="card-text lh-sm" style="font-size: 14px;">Это та часть постоянных
+                                                пассивов (собственных средств и долгосрочных обязательств), которая
+                                                остается на финансирование оборотных средств после покрытия основных
+                                                активов
+                                                <br><strong class="add-result">Для получения информации по общему
+                                                    анализу необходимо ввести данные по текущим финансовым
+                                                    потребностям</strong>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm-12">
+                                    <div class="row">
+                                        <div class="col col-sm-6 d-flex align-items-stretch align-self-stretch">
+                                            <div class="card mb-3 rounded rounded-3 shadow-sm">
+                                                <div class="card-body">
+                                                    <h5 class="card-title title-color fw-bold mb-3">Введите данные</h5>
+                                                    <form class="row align-items-end" name="coc">
+                                                        <div class="mb-3 col col-sm-6 input-group-sm">
+                                                            <label for="cocFinancialInstruments"
+                                                                class="form-label lh-sm fw-light fs-6"><small>Финансовые
+                                                                    вложения: Код.1240</small></label>
+                                                            <input type="text" class="form-control calc"
+                                                                id="cocFinancialInstruments"
+                                                                name="cocFinancialInstruments"
+                                                                aria-describedby="cocFinancialInstruments" required>
+                                                        </div>
+                                                        <div class="mb-3 col col-sm-6 input-group-sm">
+                                                            <label for="cocCash"
+                                                                class="form-label lh-sm fw-light fs-6"><small>Денежные
+                                                                    средства: Код.1250</small></label>
+                                                            <input type="text" class="form-control calc" id="cocCash"
+                                                                name="cocCash" aria-describedby="cocCash" required>
+                                                        </div>
+                                                        <div class="mb-3 col col-sm-6 input-group-sm">
+                                                            <label for="cocOverBackAsset"
+                                                                class="form-label lh-sm fw-light fs-6"><small>Прочие
+                                                                    оборотные активы: Код.1260</small></label>
+                                                            <input type="text" class="form-control calc"
+                                                                id="cocOverBackAsset" name="cocOverBackAsset"
+                                                                aria-describedby="cocOverBackAsset" required>
+                                                        </div>
+
+                                                        <div class="mb-3 col col-sm-6 input-group-sm">
+                                                            <label for="cocBorrowingCost"
+                                                                class="form-label lh-sm fw-light fs-6"><small>Заемные
+                                                                    средства: Код.1510</small></label>
+                                                            <input type="text" class="form-control calc"
+                                                                id="cocBorrowingCost" name="cocBorrowingCost"
+                                                                aria-describedby="cocBorrowingCost" required>
+                                                        </div>
+                                                        <div class="mb-3 col col-sm-6 input-group-sm">
+                                                            <label for="cocBillPayable"
+                                                                class="form-label lh-sm fw-light fs-6"><small>Кредиторская
+                                                                    задолженность: Код.1520</small></label>
+                                                            <input type="text" class="form-control calc"
+                                                                id="cocBillPayable" name="cocBillPayable"
+                                                                aria-describedby="cocBillPayable" required>
+                                                        </div>
+                                                        <div class="mb-3 col col-sm-6 input-group-sm">
+                                                            <label for="cocOverLiabilities"
+                                                                class="form-label lh-sm fw-light fs-6"><small>Прочие
+                                                                    обязательства: Код.1550</small></label>
+                                                            <input type="text" class="form-control calc"
+                                                                id="cocOverLiabilities" name="cocOverLiabilities"
+                                                                aria-describedby="cocOverLiabilities" required>
+                                                        </div>
+
+                                                        <div class="mb-3 col-sm-12 justify-content-end text-end">
+                                                            <button type="submit"
+                                                                class="w-auto btn btn-primary">Вычислить</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col col-sm-6 d-flex align-items-stretch align-self-stretch">
+                                            <div class="card mb-3 rounded rounded-3 shadow-sm flex-fill">
+                                                <h4 class="fw-bold text-uppercase mx-3 mt-3 title-color">Потребность в
+                                                    кредитовании</h4>
+                                                <div class="card-body" id="cocResult">
+                                                    <div class="row align-items-center justify-content-between py-1">
+                                                        <span class="col col-sm-8 fs-6">Собственные оборотные
+                                                            средства:</span>
+                                                        <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                            id="resCocSum">0</span>
+                                                    </div>
+                                                    <div class="row align-items-center justify-content-between py-1">
+                                                        <span class="col col-sm-8 fs-6">Текущие финансовые
+                                                            потребности:</span>
+                                                        <span class="col col-sm-4 fs-6 text-end fw-bold add-text"
+                                                            id="resTfpSum">0</span>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="row align-items-center justify-content-between py-1">
+                                                        <span class="col col-sm-8 fs-6">Потенциальный излишек/дефицит
+                                                            денежных средств:</span>
+                                                        <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                            id="resPotecialCash">0</span>
+                                                    </div>
+
+                                                    <div class="row align-items-center justify-content-between py-1">
+                                                        <span class="col col-sm-8 fs-6">Реальный излишек/дефицит
+                                                            наличности:</span>
+                                                        <span class="col col-sm-4 fs-6 text-end fw-bold add-result"
+                                                            id="resRealCash">0</span>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ./Расчет собственных оборотных средств -->
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Оперативный менеджмент -->
+                <!-- <div class="tab-pane m-3 fade" id="v-pills-messages" role="tabpanel"
+                    aria-labelledby="v-pills-messages-tab">...
+                </div> -->
+                <!-- Справка по сайту -->
+                <div class="tab-pane m-3 fade" id="v-pills-manual" role="tabpanel" aria-labelledby="v-pills-manual-tab">
+                    <div class="shadow-sm p-3 mb-3 bg-body rounded rounded-3 mx-1">
+                        <div class="manual-header mb-3">
+                            <i class="bi bi-question-square-fill helper-icon"></i>
+                            <h6 class="fw-bold fs-4">Инструкция по использованию финансового помощника</h6>
+                        </div>
+                        <div class="manual-body fs-6 mb-5">
+                            <p>В сегодняшнем мире турбулентности и неопределенности необходимы инструменты для
+                                анализа
+                                хозяйственной деятельности малого и среднего бизнеса. Вашему вниманию
+                                представлен сайт,
+                                в
+                                котором каждый сможет посмотреть, как работает его бизнес, на что нужно обратить
+                                внимание и
+                                сделать анализ своей хозяйственной деятельности. Этот сайт создан только для
+                                малого и
+                                среднего бизнеса, находящегося на территории <strong>Российской
+                                    Федерации</strong>. Для
+                                использования данных вам требуется использовать форму баланса и отчета
+                                финансовых
+                                результатов, а также отчет о финансовых результатах</p>
+                            <br>
+                            <small>Приложение № 1 к Приказу Министерства финансов Российской Федерации от
+                                02.07.2010
+                                №66н, в
+                                ред. Приказов Минфина России от 05.10.2011 №124н, от 06.04.2015 №57н, от
+                                06.03.2018
+                                №41н, от
+                                19.04.2019 №61н</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Справка по сайту -->
+            </div>
+        </section>
+    </main>
+
+
+    <section class="modal-group">
+        <!-- Рентабельность всех активов -->
+        <div class="modal fade" id="rallaModal" tabindex="-1" aria-labelledby="rallaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Рентабельность всех активов</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col-sm-12 col-12">
+                                <label for="recipient-name" class="col-form-label fs-6">Чистая прибыль после уплаты
+                                    налогов:
+                                    Код.2400</label>
+                                <input type="text" class="form-control calc" id="str2400" required>
+                            </div>
+                            <div class="mb-3 col-sm-6 col-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Cтоимость активов на начало
+                                    года:
+                                    Код.1600</label>
+                                <input type="text" class="form-control calc" id="str1600start" required>
+                            </div>
+                            <div class="mb-3 col-sm-6 col-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Cтоимость активов на конец года:
+                                    Код.1600</label>
+                                <input type="text" class="form-control calc" id="str1600end" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="rallaSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Рентабельность реализованной продукции -->
+        <div class="modal fade" id="rrpModal" tabindex="-1" aria-labelledby="rrpModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Рентабельность реализованной продукции</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Чистая прибыль после уплаты
+                                    налогов:
+                                    Код.2400</label>
+                                <input type="text" class="form-control calc" id="clearProfit" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Чистая выручка: Код.2110</label>
+                                <input type="text" class="form-control calc" id="netAvails" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="rrpSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Рентабельность собственного капитала -->
+        <div class="modal fade" id="rskModal" tabindex="-1" aria-labelledby="rskModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Рентабельность собственного капитала</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-12">
+                                <label for="recipient-name" class="col-form-label fs-6">Чистая прибыль после уплаты
+                                    налогов:
+                                    Код.2400</label>
+                                <input type="text" class="form-control calc" id="rskClearProfit" required>
+                            </div>
+                            <div class="mb-3 col-sm-6 col-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Cтоимость капитала на начало
+                                    года:
+                                    Код.1300</label>
+                                <input type="text" class="form-control calc" id="rskEquityCapitalStart" required>
+                            </div>
+                            <div class="mb-3 col-sm-6 col-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Cтоимость капитала на конец
+                                    года:
+                                    Код.1300</label>
+                                <input type="text" class="form-control calc" id="rskEquityCapitalEnd" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="rskSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Коэффициент общей ликвидности -->
+        <div class="modal fade" id="kolModal" tabindex="-1" aria-labelledby="kolModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Коэффициент общей ликвидности</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Оборотные активы.
+                                    Код.1200</label>
+                                <input type="text" class="form-control calc" id="kolFloatingAssets" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Краткосрочные обязательства.
+                                    Код.1500</label>
+                                <input type="text" class="form-control calc" id="kolCurrentLiabilities" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="kolSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Коэффициент срочной ликвидности -->
+        <div class="modal fade" id="kslModal" tabindex="-1" aria-labelledby="kslModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Коэффициент срочной ликвидности</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Оборотные активы.
+                                    Код.1200</label>
+                                <input type="text" class="form-control calc" id="kslFloatingAssets" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Запасы. Код.1210</label>
+                                <input type="text" class="form-control calc" id="kslResource" required>
+                            </div>
+                            <div class="mb-3 col">
+                                <label for="recipient-name" class="col-form-label fs-6">Краткосрочные обязательства.
+                                    Код.1500</label>
+                                <input type="text" class="form-control calc" id="kslCurrentLiabilities" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="kslSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Чистый оборотный капитал -->
+        <div class="modal fade" id="chokModal" tabindex="-1" aria-labelledby="chokModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Чистый оборотный капитал</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Оборотные активы.
+                                    Код.1200</label>
+                                <input type="text" class="form-control calc" id="chokFloatingAssets" required>
+                            </div>
+                            <div class="mb-3 col">
+                                <label for="recipient-name" class="col-form-label fs-6">Краткосрочные обязательства.
+                                    Код.1500</label>
+                                <input type="text" class="form-control calc" id="chokCurrentLiabilities" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="chokSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Коэффициент оборачиваемости активов -->
+        <div class="modal fade" id="koaModal" tabindex="-1" aria-labelledby="koaModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Коэффициент оборачиваемости активов</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-12">
+                                <label for="recipient-name" class="col-form-label fs-6">Чистая выручка: Код.2110</label>
+                                <input type="text" class="form-control calc" id="koaNetAvails" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Оборотные активы на начало года:
+                                    Код.1200</label>
+                                <input type="text" class="form-control calc" id="koaFloatingAssetsStart" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Оборотные активы на конец года:
+                                    Код.1200</label>
+                                <input type="text" class="form-control calc" id="koaFloatingAssetsEnd" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="koaSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Коэффициент оборачиваемости дебиторской задолженности -->
+        <div class="modal fade" id="kodzModal" tabindex="-1" aria-labelledby="kodzModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Коэффициент оборачиваемости дебиторской задолженности</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-12">
+                                <label for="recipient-name" class="col-form-label fs-6">Чистая выручка: Код.2110</label>
+                                <input type="text" class="form-control calc" id="kodzNetAvails" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Дебиторская задолженность на
+                                    начало
+                                    года: Код.1234</label>
+                                <input type="text" class="form-control calc" id="kodzNotesPayableStart" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Дебиторская задолженность на
+                                    конец
+                                    года: Код.1234</label>
+                                <input type="text" class="form-control calc" id="kodzNotesPayableEnd" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="kodzSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Коэффициент оборачиваемости кредиторской задолженности -->
+        <div class="modal fade" id="kokzModal" tabindex="-1" aria-labelledby="kokzModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Коэффициент оборачиваемости кредиторской задолженности</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-12">
+                                <label for="recipient-name" class="col-form-label fs-6">Себестоимость реализованной
+                                    продукции: Код.2120</label>
+                                <input type="text" class="form-control calc" id="kokzProductionPrice" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Кредиторская задолженность на
+                                    начало
+                                    года: Код.1520</label>
+                                <input type="text" class="form-control calc" id="kokzBillPayableStart" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Кредиторская задолженность на
+                                    конец
+                                    года: Код.1520</label>
+                                <input type="text" class="form-control calc" id="kokzBillPayableEnd" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="kokzSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Коэффициент оборачиваемости материально-производственных запасов -->
+        <div class="modal fade" id="kompzModal" tabindex="-1" aria-labelledby="kompzModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Коэффициент оборачиваемости материально-производственных запасов</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-12">
+                                <label for="recipient-name" class="col-form-label fs-6">Себестоимость реализованной
+                                    продукции: Код.2120</label>
+                                <input type="text" class="form-control calc" id="kompzProductionPrice" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Запасы на начало года:
+                                    Код.1210</label>
+                                <input type="text" class="form-control calc" id="kompzResourceStart" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Запасы на конец года:
+                                    Код.1210</label>
+                                <input type="text" class="form-control calc" id="kompzResourceEnd" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="kompzSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Коэффициент собственности -->
+        <div class="modal fade" id="ksoModal" tabindex="-1" aria-labelledby="ksoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Коэффициент собственности</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Собственный капитал:
+                                    Код.1300</label>
+                                <input type="text" class="form-control calc" id="ksoCapital" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Итого баланса: Код.1600</label>
+                                <input type="text" class="form-control calc" id="ksoBalance" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="ksoSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Коэффициент финансовой зависимости  -->
+        <div class="modal fade" id="kfzModal" tabindex="-1" aria-labelledby="kfzModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Коэффициент финансовой зависимости</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-12">
+                                <label for="recipient-name" class="col-form-label fs-6">Собственный капитал:
+                                    Код.1300</label>
+                                <input type="text" class="form-control calc" id="kfzCapital" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Долгосрочные обязательства:
+                                    Код.1400</label>
+                                <input type="text" class="form-control calc" id="kfzLongLiabilities" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Краткосрочные обязательства:
+                                    Код.1500</label>
+                                <input type="text" class="form-control calc" id="kfzShortLiabilities" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="kfzSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Коэффициент финансовой зависимости  -->
+        <div class="modal fade" id="kzkModal" tabindex="-1" aria-labelledby="kzkModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Коэффициент финансовой зависимости</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row align-items-end">
+                            <div class="mb-3 col col-12">
+                                <label for="recipient-name" class="col-form-label fs-6">Чистая прибыль: Код.2400</label>
+                                <input type="text" class="form-control calc" id="kzkProfit" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Налог на прибыль:
+                                    Код.2410</label>
+                                <input type="text" class="form-control calc" id="kzkProfitTax" required>
+                            </div>
+                            <div class="mb-3 col col-sm-6">
+                                <label for="recipient-name" class="col-form-label fs-6">Проценты к уплате:
+                                    Код.2330</label>
+                                <input type="text" class="form-control calc" id="kzkInterestPayable" required>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary text-white" id="kzkSubmit">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="#" class="scrollup text-end" id="scroll-up">
+        <i class="bi bi-arrow-up-short scrollup__icon"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

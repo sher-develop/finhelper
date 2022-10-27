@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito Light'), local('Nunito-Light'), url('../fonts/Nunito-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito Regular'), local('Nunito-Regular'), url('../fonts/Nunito-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito Bold'), local('Nunito-Bold'), url('../fonts/Nunito-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: local('Nunito Semibold'), local('Nunito-Semibold'), url('../fonts/Nunito-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+:root {
+    --primary-1: #291380;
+    --primary-2: #5226ff;
+    --primary-3: #7957fe;
+    --primary-4: #977dff;
+    --primary-5: #eee9ff;
+
+    --grey-1: #1b255a;
+    --grey-2: #8d96b5;
+    --grey-3: #cdd0d9;
+    --grey-4: #f1f3f5;
+    --grey-5: #f8f9fb;
+
+    --add-1: #00b7fd;
+    --add-2: #a117ff;
+    --add-3: #ff6b01;
+    --add-4: #fc2254;
+
+    --rounded-3: 32px;
+
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    font-family: 'Nunito', sans-serif;
+    color: var(--primary-1);
+    position: relative;
+    background-color: var(--grey-5);
+}
+
+.logo-text {
+    color: var(--primary-2);
+    display: flex;
+    align-items: center;
+    font-size: .875rem;
+    text-transform: uppercase;
+}
+
+.logo-text:hover {
+    color: var(--primary-2);
+}
+
+.logo-text small {
+    margin-left: .5rem;
+}
+
+.fin-link {
+    text-align: left;
+}
+
+.footer-bg {
+    background-color: #fff;
+}
+
+.rounded-3 {
+    border-radius: var(--rounded-3);
+}
+
+.finance-main {
+    margin-left: 216px;
+}
+
+.finance-main-bg {
+    background-color: white;
+}
+
+.finance-block {
+    z-index: 1000;
+    top: 1rem;
+    margin: 0 1rem;
+}
+
+
+.bg-fin {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    background-color: white;
+}
+
+.nav-link.active {
+    background-color: var(--grey-4) !important;
+}
+
+.btn-primary-about {
+    background-color: white !important;
+    border: 1px solid var(--primary-5) !important;
+    color: var(--primary-1) !important;
+}
+
+.dropdown-icon {
+    color: var(--primary-2);
+    font-size: 1.2rem;
+}
+
+.bi-size {
+    font-size: 1.5rem;
+    color: var(--primary-2);
+}
+
+.title-color {
+    color: var(--primary-2);
+}
+
+.card {
+    border-color: var(--primary-5);
+}
+
+.card-position {
+    position: relative;
+    width: 100%;
+}
+
+.title-uppercase {
+    text-transform: uppercase;
+}
+
+.btn-position {
+    position: absolute;
+    right: 0;
+    top: 8px;
+
+}
+
+.btn-position:hover {
+    color: var(--prm-3);
+}
+
+.btn-primary {
+    background: var(--primary-2);
+    border: var(--primary-2);
+}
+
+.turnover-button-prev,
+.turnover-button-next,
+.profitability-button-prev,
+.profitability-button-next,
+.liquidity-button-prev,
+.liquidity-button-next,
+.capital-button-prev,
+.capital-button-next {
+    color: var(--primary-2);
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.turnover-button-prev:hover,
+.profitability-button-prev:hover,
+.liquidity-button-prev:hover,
+.capital-button-prev:hover {
+    color: var(--primary-3);
+}
+
+.turnover-button-next:hover,
+.profitability-button-next:hover,
+.liquidity-button-next:hover,
+.capital-button-next:hover {
+    color: var(--primary-3);
+}
+
+.bi-chevron-bar-expand,
+.bi-chevron-bar-contract {
+    color: var(--primary-2);
+}
+
+.manual-header {
+    display: flex;
+    align-items: center;
+}
+
+.helper-icon {
+    color: var(--primary-2);
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.result-text {
+    color: var(--add-4);
+}
+
+thead {
+    color: var(--primary-3);
+}
+
+tbody {
+    color: var(--primary-1);
+}
+
+.cost-delete {
+    padding: 0;
+    color: var(--add-4);
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.add-result {
+    color: var(--add-4);
+}
+
+.add-text {
+    color: var(--add-1);
+}
+
+.scrollup {
+    position: fixed;
+    bottom: -20%;
+    z-index: 9999;
+    transition: bottom .3s linear;
+
+    display: inline-block;
+    width: 1024px;
+    max-width: 100%;
+    padding-right: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scrollup.show-scroll {
+    bottom: 16px;
+}
+
+.scrollup__icon {
+    background-color: var(--add-4);
+    opacity: .5;
+    padding: 0 5px;
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    transition: opacity .3s linear;
+}
+
+.scrollup__icon:hover {
+    opacity: 1;
+}
+
+.footer-text-icon {
+    color: var(--primary-2);
+    font-size: 22px;
+    transition: color .3s linear;
+}
+
+.footer-text-icon-nav {
+    color: var(--primary-2);
+    font-size: 1.5rem;
+    transition: color .3s linear;
+}
+
+.footer-text-icon:hover,
+.footer-text-icon-nav:hover {
+    color: var(--primary-3);
+}
+
+.icons-show {
+    display: flex;
+}
+
+.icons-show-nav {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .finance-main {
+        margin-left: 0;
+    }
+
+    .finance-block {
+        top: 90px;
+        display: block;
+    }
+
+    .bg-fin {
+        width: 280px;
+    }
+
+    .icons-show {
+        display: none;
+    }
+
+    .icons-show-nav {
+        display: flex;
+    }
+}
+
+@media (max-width: 873px) {
+    .finance-main {
+        margin-left: 0;
+    }
+
+    .finance-block {
+        top: 90px;
+        display: block;
+    }
+
+    .bg-fin {
+        width: 280px;
+    }
+
+    .icons-show {
+        display: none;
+    }
+
+    .icons-show-nav {
+        display: flex;
+    }
+}

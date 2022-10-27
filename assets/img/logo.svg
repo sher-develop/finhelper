@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 60 60">
+  <g id="logo" transform="translate(-25.559 -31.431)">
+    <rect id="Прямоугольник_5" data-name="Прямоугольник 5" width="60" height="60" rx="13" transform="translate(25.559 31.431)" fill="#5226ff"/>
+    <line id="Линия_1" data-name="Линия 1" y2="25" transform="translate(36.559 48.431)" fill="none" stroke="#f8f9fb" stroke-linecap="round" stroke-width="8"/>
+    <line id="Линия_2" data-name="Линия 2" x2="14" transform="translate(36.559 48.431)" fill="none" stroke="#f8f9fb" stroke-linecap="round" stroke-width="8"/>
+    <circle id="Эллипс_1" data-name="Эллипс 1" cx="5.064" cy="5.064" r="5.064" transform="translate(41.986 57.362)" fill="#f8f9fb"/>
+    <line id="Линия_3" data-name="Линия 3" y2="16.881" transform="translate(62.141 56.096)" fill="none" stroke="#f8f9fb" stroke-linecap="round" stroke-width="8"/>
+    <circle id="Эллипс_2" data-name="Эллипс 2" cx="5.064" cy="5.064" r="5.064" transform="translate(67.931 65.803)" fill="#f8f9fb"/>
+  </g>
+</svg>
